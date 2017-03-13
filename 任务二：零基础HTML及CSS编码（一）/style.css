@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#header ul li{
+    float: right;
+    text-align: center;
+    line-height: 60px;
+    margin-left:30px;
+}
+#header ul li a{
+    text-decoration: none;
+    color:white;
+    font-size:14px;
+}
+#header{
+    background: gray;
+    height: 60px;
+    margin: 0 auto;
+}
+#header h1{
+    float: left;
+    margin-left: 10px;
+    color:white;
+    line-height:60px;
+
+}
+
+.article{
+    margin: 10px;
+    border: 1px solid black;
+    padding:0 10px;
+}
+.article h1{
+    margin: 20px 0  0;
+}
+.article h2{
+    font-weight: normal;
+    font-family: sans-serif;
+}
+.article p{
+    text-indent: 2em;
+    line-height: 25px;
+}
+.article ul li{
+    list-style-type: none;
+    margin-left: 20px;
+}
+.article ul
+{
+    margin-bottom: 20px;
+}
+.article ol{
+    margin-left: 20px;
+}
+
+.photo{
+    border: 1px solid lightgray;
+    margin: 10px;
+    width: 550px;
+    height: 250px;
+}
+.photo img{
+    margin: 10px;
+}
+.photo p{
+    text-align: center;
+}
+.article table{
+    border: 1px solid lightgray;0
+    margin-bottom: 10px;
+}
+.article table td{
+    border: 1px solid lightgray;
+}
+.article table{
+    width: 100%;
+}
+.article table tr th
+{
+    background-color: black;
+    color: white;
+}
+#bottom{
+    background-color: lightgray;
+}
+#personalInfo{
+    text-align: center;
+    /*font-size: 0px;*/
+}
+.description{
+    color: lightgray;
+    font-size: 14px;
+}
+.title{
+    text-align: right;
+    width:50%;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+
+}
+.input{
+    float: left;
+    margin-left: 10px;
+}
+#submit{
+    text-align: center;
+    width: 100%;
+    margin:20px 20px 0px 20px;
+    background-color: blue;
+    color: white;
+    display: block;
+    height: 40px;
+}
+#copyRight{
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    display: block;
+    height: 60px;
+}
