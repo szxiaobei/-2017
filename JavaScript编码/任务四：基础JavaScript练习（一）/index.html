@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        li{
+            float: left;
+            color: white;
+            background-color: red;
+            list-style-type: none;
+            display: block;
+            width: 40px;
+            margin-right: 20px;
+            text-align: center;
+        }
+    </style>
+    <script type="text/javascript">
+     window.onload= function () {
+            var input = document.getElementById("input");
+            var div = document.getElementById("content");
+            var ul = div.getElementsByTagName("ul")[0];
+
+             var leftIn = document.getElementById("left-in");
+             leftIn.onclick = function () {
+                   if( checkNum(input.value) == true){
+                       var  li = document.createElement("li");
+                       li.innerHTML = input.value;
+                       ul.appendChild(li);
+                   }
+                }
+            var rightIn = document.getElementById("right-in");
+             rightIn.onclick = function () {
+                 if(checkNum(input.value) == true)
+                 {
+                     var li = document.createElement("li");
+                     li.innerHTML = input.value;
+                     ul.insertBefore(li,ul.firstChild);
+                 }
+             }
+             var  leftOut = document.getElementById("left-out");
+             leftOut.onclick = function () {
+                 if(checkNum(input.value) == true){
+                     var li = ul.firstChild;
+                     ul.removeChild(li);
+                 }
+             }
+             var rightOut = document.getElementById("right-out");
+             rightOut.onclick= function () {
+                 if (checkNum(input.value) == true){
+                     var li = ul.lastChild;
+                     ul.removeChild(li);
+                 }
+             }
+             function checkNum(num) {
+                 if(isNaN(num)){
+                     alert("请输入数字");
+                     return false;
+                 }
+                 else  return true;
+             }
+        }
+
+    </script>
+</head>
+<body>
+    <div>
+        <input type="text" id="input">
+        <input type="button" id="left-in" value="左侧入">
+        <input type="button" id="right-in" value="右侧入">
+        <input type="button" id="left-out" value="左侧出">
+        <input type="button"id="right-out" value="右侧出">
+    </div>
+    <div id="content">
+        <ul>
+
+        </ul>
+    </div>
+
+</body>
+</html>
